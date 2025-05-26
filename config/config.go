@@ -32,3 +32,7 @@ func GetConfig() *config {
 func (c config) GetModo() string {
 	return c.modo
 }
+
+func (c *config) SetModo(modo string) {
+	c.modo = modo
+}

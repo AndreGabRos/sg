@@ -7,7 +7,9 @@ import (
 
 func main() {
 	c := config.GetConfig()
-	config.GetConfig()
+	c2 := config.GetConfig()
 
 	fmt.Println(c.GetModo())
+	c.SetModo("oi")
+	fmt.Println(c2.GetModo())
 }
