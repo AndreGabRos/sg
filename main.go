@@ -1,15 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"sg/config"
+	"sg/web"
 )
 
 func main() {
-	c := config.GetConfig()
-	c2 := config.GetConfig()
-
-	fmt.Println(c.GetModo())
-	c.SetModo("oi")
-	fmt.Println(c2.GetModo())
+	web.RodarServidorWeb()
 }
